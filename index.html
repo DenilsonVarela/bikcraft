@@ -7,6 +7,7 @@
 <title>Bikcraft - Bicicletas Elétricas</title>
 <meta name="description" content="Quando iniciamos a Bikcraft queriamos apenas um produto que adorariamos utilizar. Eramos apaixonado por pedalar e também fazer.">
 
+<link rel="icon" href="./img/icones/eletrica.svg" type="image/svg+xml">
 <link rel="preload" href="style.css" as="atyle">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="global.css">
@@ -25,13 +26,19 @@
 <link rel="stylesheet" href="bicicletas.css">
 <link rel="stylesheet" href="vantagens.css">
 <link rel="stylesheet" href="perguntas.css">
+<link rel="stylesheet" href="animacao.css">
 
-<!--<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+
+<script>documento.documentoElement.classList.add('js');</script>
 </head>
+
 <body>
+    
+
 <header class="header-bg">
 <div class="header container">
 <a href="./">
@@ -51,11 +58,11 @@
 <main class="introducao-bg">
 <div class="introducao container">
 <div class="introducao-conteudo">    
-<h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-<p class="font-2-l cor-5">Quando iniciamos a Bikcraft queriamos apenas um produto que adorariamos utilizar. Eramos apaixonado por pedalar e também fazer.</p>
-<a class="botao" href="./bicicletas.html">Escolha a sua</a>
+<h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+<p class="font-2-l cor-5 fadeInDown" data-anime="400">Quando iniciamos a Bikcraft queriamos apenas um produto que adorariamos utilizar. Eramos apaixonado por pedalar e também fazer.</p>
+<a class="botao fadeInDown" data-anime="600" href="./bicicletas.html">Escolha a sua</a>
 </div>
-<picture>
+<picture data-anime="800" class="fadeInDown">
 <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">    
 <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
 </picture>
@@ -209,5 +216,8 @@
 <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
 </div>
 </footer>
+<script src="plugins/simple-anime.js"></script>
+<script src="script.js"></script> 
 </body>
+
 </html>
